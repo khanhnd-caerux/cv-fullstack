@@ -1,0 +1,41 @@
+# ==========================================
+# 2. OS & IDEs
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Editors (VS Code, IntelliJ, etc)
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+.project
+.settings/
+
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+coverage/
+
+# ==========================================
+# Project-specific
+# ==========================================
+builds/
+cache/
+
+# ==========================================
+# Docusaurus (website/)
+# ==========================================
+website/node_modules/
+website/build/
+website/.docusaurus/

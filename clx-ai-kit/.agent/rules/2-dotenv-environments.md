@@ -1,0 +1,81 @@
+---
+trigger: always_on
+description: Always use .env files with multiple environment support for configuration
+---
+
+# Environment Configuration with .env Files
+
+Always use `.env` files for environment-specific configuration. Support multiple environments (development, staging, production).
+
+## File Structure
+
+```
+.env.example      # Template with all variables (committed)
+.env              # Local development (gitignored)
+.env.development  # Development defaults
+.env.staging      # Staging environment
+.env.production   # Production environment
+```
+
+## Best Practices
+
+### 1. Always Create `.env.example`
+
+```bash
+# .env.example - Committed to repo
+DATABASE_URL=postgresql://user:password@localhost:5432/dbname
+API_KEY=your-api-key-here
+NODE_ENV=development
+```
+
+### 2. Environment-Specific Loading
+
+```python
+# Python (python-dotenv)
+from dotenv import load_dotenv
+import os
+
+env = os.getenv("APP_ENV", "development")
+load_dotenv(f".env.{env}")
+load_dotenv(".env", override=True)  # Local overrides
+```
+
+```typescript
+// Node.js (dotenv)
+import dotenv from "dotenv";
+
+const env = process.env.NODE_ENV || "development";
+dotenv.config({ path: `.env.${env}` });
+dotenv.config({ override: true }); // Local .env overrides
+```
+
+### 3. Gitignore Configuration
+
+```gitignore
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Keep examples
+!.env.example
+```
+
+### 4. Required Variables Validation
+
+```typescript
+// Validate required env vars at startup
+const required = ["DATABASE_URL", "API_KEY"];
+for (const key of required) {
+  if (!process.env[key]) {
+    throw new Error(`Missing required environment variable: ${key}`);
+  }
+}
+```
+
+## Rules
+
+- Never commit secrets to `.env.example` - use placeholder values
+- Always validate required environment variables at application startup
+- Use typed configuration objects instead of raw `process.env` access
+- Document all environment variables in `.env.example`

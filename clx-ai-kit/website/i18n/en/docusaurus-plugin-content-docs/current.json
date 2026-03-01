@@ -1,0 +1,26 @@
+{
+  "sidebar.docsSidebar.category.Bắt đầu": {
+    "message": "Getting Started",
+    "description": "The label for category 'Bắt đầu' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Hướng dẫn sử dụng": {
+    "message": "Usage Guide",
+    "description": "The label for category 'Hướng dẫn sử dụng' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Nội bộ dự án": {
+    "message": "Project Internals",
+    "description": "The label for category 'Nội bộ dự án' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Triển khai & Phát hành": {
+    "message": "Deployment & Publishing",
+    "description": "The label for category 'Triển khai & Phát hành' in sidebar 'docsSidebar'"
+  },
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.doc.Giới thiệu": {
+    "message": "Introduction",
+    "description": "The label for the doc item 'Giới thiệu' in sidebar 'docsSidebar', linking to the doc intro"
+  }
+}

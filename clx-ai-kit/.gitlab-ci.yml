@@ -1,0 +1,75 @@
+# .gitlab-ci.yml
+# CI/CD pipeline for @caeruxlab/aidk
+#
+# Stages:
+#   test    — runs on every push (lint + unit tests)
+#   publish — runs only on v* tag pushes (build + npm publish to GitLab Package Registry)
+#   pages   — runs on main branch pushes (build + deploy Docusaurus to GitLab Pages)
+#
+# Auth: Uses CI_JOB_TOKEN automatically — no manual secret configuration needed.
+#
+# Note: Shell executor runs non-interactive bash — NVM must be loaded explicitly.
+
+image: node:24-alpine
+
+stages:
+  - test
+  - publish
+  - pages
+
+# Load NVM so npm/node are available in the shell executor (non-interactive bash)
+before_script:
+  - export NVM_DIR="$HOME/.nvm"
+  - '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'
+  - nvm use 24 || nvm use default
+  - node --version
+  - npm --version
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+    - website/node_modules/
+
+# ─── Test Stage ───────────────────────────────────────────────────────────────
+
+test:
+  stage: test
+  script:
+    - npm ci
+    - npm run lint
+    - npm test
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push"'
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+
+# ─── Publish Stage ────────────────────────────────────────────────────────────
+
+publish:
+  stage: publish
+  script:
+    - npm ci
+    - npm run build
+    - npm publish
+  rules:
+    # Only run on semver tags: v0.2.0, v1.0.0, etc.
+    - if: '$CI_COMMIT_TAG =~ /^v\d+\.\d+\.\d+/'
+  environment:
+    name: npm-registry
+    url: https://git.caerux.com/caeruxlab/clx-ai-kit/-/packages
+
+# ─── Pages Stage (Docusaurus) ─────────────────────────────────────────────────
+
+# pages:
+#   stage: pages
+#   image: node:24-alpine
+#   script:
+#     - cd website
+#     - npm ci
+#     - npm run build
+#     - mv build ../public
+#   artifacts:
+#     paths:
+#       - public
+#   rules:
+#     - if: '$CI_COMMIT_BRANCH == "main"'

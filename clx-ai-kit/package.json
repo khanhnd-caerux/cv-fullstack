@@ -1,0 +1,55 @@
+{
+  "name": "@caeruxlab/aidk",
+  "version": "0.6.0",
+  "description": "CLI tool to scaffold AI-assisted development structures (rules, skills, commands, docs) for Cursor and Antigravity IDEs",
+  "type": "module",
+  "bin": {
+    "aidk": "./dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "templates/"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "publishConfig": {
+    "registry": "https://git.caerux.com/api/v4/projects/caeruxlab%2Fclx-ai-kit/packages/npm/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.caerux.com/caeruxlab/clx-ai-kit.git"
+  },
+  "keywords": [
+    "ai",
+    "devkit",
+    "cli",
+    "cursor",
+    "antigravity",
+    "scaffolding"
+  ],
+  "author": "anhvt2280",
+  "license": "MIT",
+  "dependencies": {
+    "@clack/prompts": "^1.0.1",
+    "commander": "^14.0.3",
+    "fs-extra": "^11.3.3",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^25.3.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}

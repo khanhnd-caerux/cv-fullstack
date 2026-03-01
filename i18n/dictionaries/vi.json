@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "cv": "CV",
+    "download": "Tải CV (PDF)"
+  },
+  "cv": {
+    "name": "Duy Khánh",
+    "role": "Fullstack Developer",
+    "summary_title": "Tóm tắt chuyên môn",
+    "summary_text": "Lập trình viên Fullstack với hơn 4 năm kinh nghiệm xây dựng các ứng dụng web hiệu năng cao, lấy người dùng làm trung tâm. Có kiến thức vững chắc về ReactJS, Next.js, React Native và PHP (Laravel). Luôn tập trung vào việc xây dựng kiến trúc sạch (Clean Architecture), tối ưu hiệu suất và mang lại trải nghiệm người dùng mượt mà.",
+    "experience_title": "Kinh nghiệm làm việc",
+    "projects_title": "Dự án tiêu biểu",
+    "education_title": "Học vấn",
+    "skills_title": "Kỹ năng chuyên môn",
+    "languages_title": "Ngôn ngữ",
+    "contact_title": "Thông tin liên hệ",
+    "back_to_portfolio": "Về trang chủ",
+    "phone": "Số điện thoại",
+    "email": "Email",
+    "location": "Địa chỉ",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "website": "Trang web",
+    "contact": {
+      "phone": "+84 348786464",
+      "email": "nguyenduykhanh827@gmail.com",
+      "location": "Hà Nội, Việt Nam",
+      "github": "github.com/ndk-771998",
+      "linkedin": "linkedin.com/in/duykhanh"
+    },
+    "languages": [
+      { "name": "Tiếng Việt", "level": "Tiếng mẹ đẻ" },
+      { "name": "Tiếng Anh", "level": "Đọc hiểu tốt" }
+    ],
+    "experience": [
+      {
+        "role": "Middle Fullstack Developer",
+        "company": "Caerux Co., Ltd",
+        "period": "2022 - Hiện tại",
+        "location": "Hà Nội",
+        "description": "Dẫn dắt thiết kế kiến trúc cốt lõi và tối ưu hệ thống hiệu năng cao cho khách hàng doanh nghiệp. Triển khai các giải pháp hạ tầng chat có khả năng mở rộng và tối ưu giao tiếp thời gian thực. Thành thạo: HTML, CSS, JavaScript, TypeScript, PHP. Làm việc với các framework: Laravel, ReactJS, React Native, EC-CUBE, Next.js."
+      }
+    ],
+    "projects": [
+      {
+        "name": "Tsalad Shopify",
+        "role": "Frontend Developer",
+        "tech": "HTML, CSS, JavaScript",
+        "teamsite": 3,
+        "worktime": "3 tháng",
+        "domain": "Thương mại điện tử",
+        "description": "Hệ thống thương mại điện tử hoàn chỉnh với chức năng giỏ hàng, thanh toán trực tuyến và trang quản trị mạnh mẽ.",
+        "responsibility": [
+          "Xây dựng giao diện người dùng responsive",
+          "Tối ưu hóa tốc độ tải trang và SEO",
+          "Tích hợp các ứng dụng hỗ trợ bán hàng"
+        ]
+      },
+      {
+        "name": "ECCUBE Adwaa",
+        "role": "Fullstack Developer",
+        "tech": "EC-CUBE, SPayment",
+        "teamsite": 4,
+        "worktime": "5 tháng",
+        "domain": "Studio & Dịch vụ ảnh",
+        "description": "Website cho phép người dùng tải hình ảnh đã chụp tại studio kèm theo các dịch vụ như in ảnh, khung ảnh, chỉnh sửa và tạo album. Dịch vụ bao gồm ảnh cưới, sinh nhật và các dịp kỷ niệm.",
+        "responsibility": [
+          "Tùy biến nhân core EC-CUBE",
+          "Tích hợp cổng thanh toán SPayment",
+          "Xây dựng tính năng quản lý album và đơn hàng in ấn"
+        ]
+      },
+      {
+        "name": "Hire Fire",
+        "role": "Frontend Application Developer",
+        "tech": "React Native",
+        "teamsite": 5,
+        "worktime": "4 tháng",
+        "domain": "Tuyển dụng & Kết nối việc làm",
+        "description": "Ứng dụng kết nối nhà tuyển dụng và người lao động theo mô hình matching tương tự Tinder. Sau khi ghép đôi (match), hai bên có thể trò chuyện trực tiếp.",
+        "responsibility": [
+          "Phát triển giao diện ứng dụng di động (UI/UX)",
+          "Tính năng matching thời gian thực",
+          "Tích hợp hệ thống chat trực tiếp"
+        ]
+      },
+      {
+        "name": "Adop Hiroshi App",
+        "role": "Fullstack Developer",
+        "tech": "React Native, Laravel",
+        "teamsite": 3,
+        "worktime": "6 tháng",
+        "domain": "IoT & Smart Living",
+        "description": "Ứng dụng mở khóa tủ thông minh tại chung cư. Phát triển tính năng mở khóa qua Bluetooth bằng ứng dụng cài đặt trên thiết bị di động.",
+        "responsibility": [
+          "Xử lý kết nối Bluetooth (BLE) trên di động",
+          "Xây dựng API quản lý lượt truy cập và mở khóa",
+          "Tích hợp hệ thống thông báo"
+        ]
+      },
+      {
+        "name": "VN Coaching",
+        "role": "Fullstack Developer",
+        "tech": "HTML, CSS, JavaScript, Laravel",
+        "teamsite": 4,
+        "worktime": "4 tháng",
+        "domain": "EdTech",
+        "description": "Website cung cấp và bán các khóa học trực tuyến. Người dùng có thể đăng ký tài khoản và thanh toán khóa học theo từng cấp độ.",
+        "responsibility": [
+          "Quản lý luồng video khóa học",
+          "Hệ thống phân quyền người dùng và thanh toán",
+          "Tối ưu hóa database cho truy vấn khóa học"
+        ]
+      },
+      {
+        "name": "Jarmec CTO",
+        "role": "Frontend Application Developer",
+        "tech": "TypeScript, React Native",
+        "teamsite": 6,
+        "worktime": "5 tháng",
+        "domain": "HealthTech",
+        "description": "Ứng dụng hỗ trợ bệnh nhân Parkinson với các tính năng như nhắc nhở uống thuốc, quản lý đơn thuốc và theo dõi quá trình sử dụng thuốc thông qua việc ghi nhận số lần dùng thuốc.",
+        "responsibility": [
+          "Phát triển tính năng nhắc nhở (push notification)",
+          "Xây dựng đồ thị theo dõi sức khỏe",
+          "Tối ưu trải nghiệm cho người dùng cao tuổi"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Cử nhân Công nghệ Thông tin",
+        "school": "Khoa Hệ thống Thông tin Quản lý - Học viện Ngân hàng",
+        "period": "2016 - 2019",
+        "description": "Tốt nghiệp loại Giỏi, chuyên ngành Lập trình Web."
+      }
+    ],
+    "project_headers": {
+      "name": "Tên dự án",
+      "role": "Vai trò",
+      "tech": "Công nghệ",
+      "teamsite": "Số lượng thành viên",
+      "worktime": "Thời gian thực hiện",
+      "domain": "Lĩnh vực",
+      "description": "Mô tả",
+      "responsibility": "Trách nhiệm chính"
+    }
+  }
+}

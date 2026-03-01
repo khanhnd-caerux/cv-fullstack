@@ -1,0 +1,38 @@
+{
+  "link.title.Tài liệu": {
+    "message": "Tài liệu",
+    "description": "The title of the footer links column with title=Tài liệu in the footer"
+  },
+  "link.title.Thêm": {
+    "message": "Thêm",
+    "description": "The title of the footer links column with title=Thêm in the footer"
+  },
+  "link.item.label.Cài đặt": {
+    "message": "Cài đặt",
+    "description": "The label of footer link with label=Cài đặt linking to /docs/setup"
+  },
+  "link.item.label.Sử dụng CLI": {
+    "message": "Sử dụng CLI",
+    "description": "The label of footer link with label=Sử dụng CLI linking to /docs/cli-usage"
+  },
+  "link.item.label.Nội bộ dự án": {
+    "message": "Nội bộ dự án",
+    "description": "The label of footer link with label=Nội bộ dự án linking to /docs/internals"
+  },
+  "link.item.label.Xuất bản": {
+    "message": "Xuất bản",
+    "description": "The label of footer link with label=Xuất bản linking to /docs/publishing"
+  },
+  "link.item.label.Cấu hình GitLab": {
+    "message": "Cấu hình GitLab",
+    "description": "The label of footer link with label=Cấu hình GitLab linking to /docs/gitlab-setup"
+  },
+  "link.item.label.GitLab": {
+    "message": "GitLab",
+    "description": "The label of footer link with label=GitLab linking to https://git.caerux.com/caeruxlab/clx-ai-kit"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 CaeruxLab. Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}
