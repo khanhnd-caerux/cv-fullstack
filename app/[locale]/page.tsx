@@ -4,7 +4,7 @@ import CVTemplate from "@/components/CVTemplate";
 export default async function Page({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
   const dict = await getDictionary(locale as Locale);
