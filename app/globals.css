@@ -76,3 +76,87 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+/* ========================================
+   PRINT STYLES — PDF Export
+   ======================================== */
+@media print {
+  /* Force light mode colors */
+  html,
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Hide interactive elements */
+  nav,
+  .print\:hidden,
+  [data-print="hidden"] {
+    display: none !important;
+  }
+
+  /* Ensure the CV card fills the page */
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Remove outer card shadow/radius for print */
+  main > div {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Force glass utility to white in print */
+  .glass,
+  .dark .glass {
+    background: #ffffff !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: none !important;
+  }
+
+  /* Sidebar print styles — keep light bg */
+  aside {
+    background: #f1f5f9 !important;
+    border-right: 1px solid #e2e8f0 !important;
+  }
+
+  /* Main content area */
+  .lg\:col-span-8 {
+    background: #ffffff !important;
+  }
+
+  /* Preserve accent indigo color for print */
+  .text-accent-indigo {
+    color: #4338ca !important;
+  }
+
+  /* Preserve skill tags */
+  span[class*="hover:bg-accent-indigo"] {
+    border-color: #e2e8f0 !important;
+    color: #0f172a !important;
+  }
+
+  /* Page break control */
+  section {
+    break-inside: avoid;
+  }
+
+  /* Remove animations */
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Page settings */
+  @page {
+    size: A4;
+    margin: 10mm 8mm;
+  }
+}

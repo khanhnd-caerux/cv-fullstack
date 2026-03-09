@@ -14,6 +14,7 @@ import {
   Award,
   Code2,
   Globe,
+  FileDown,
 } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -62,7 +63,16 @@ export default function CVTemplate({ locale, dict }: { locale: string; dict: any
     <div className="min-h-screen dark:bg-midnight-950 bg-slate-50 transition-colors duration-300">
       {/* Navigation Controls */}
       <nav className="fixed top-0 left-0 right-0 z-50 py-4 px-6 flex justify-between items-center pointer-events-none">
-        <div className="container mx-auto flex justify-end gap-3 pointer-events-auto">
+        <div className="container mx-auto flex justify-end gap-3 pointer-events-auto" data-print="hidden">
+          <button
+            id="btn-export-pdf"
+            onClick={() => window.print()}
+            aria-label={dict.nav.export_pdf}
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-accent-indigo text-white text-sm font-bold shadow-lg shadow-accent-indigo/20 hover:bg-accent-indigo/90 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+          >
+            <FileDown size={16} />
+            {dict.nav.export_pdf}
+          </button>
           <LanguageSwitcher currentLocale={locale} />
           <ThemeToggle />
         </div>
@@ -106,6 +116,7 @@ export default function CVTemplate({ locale, dict }: { locale: string; dict: any
                   <SidebarItem icon={<MapPin size={18} />} label={cv.location} value={cv.contact.location} />
                   <SidebarItem icon={<Github size={18} />} label={cv.github} value={cv.contact.github} href={`https://${cv.contact.github}`} />
                   <SidebarItem icon={<Linkedin size={18} />} label={cv.linkedin} value={cv.contact.linkedin} href={`https://${cv.contact.linkedin}`} />
+                  <SidebarItem icon={<Globe size={18} />} label={cv.vercel} value={cv.contact.vercel} href={`https://${cv.contact.vercel}`} />
                 </div>
 
                 {/* Languages */}

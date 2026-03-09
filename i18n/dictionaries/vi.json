@@ -1,7 +1,8 @@
 {
   "nav": {
     "cv": "CV",
-    "download": "Tải CV (PDF)"
+    "download": "Tải CV (PDF)",
+    "export_pdf": "Xuất PDF"
   },
   "cv": {
     "name": "Duy Khánh",
@@ -20,16 +21,17 @@
     "location": "Địa chỉ",
     "github": "GitHub",
     "linkedin": "LinkedIn",
+    "vercel": "CV Online",
     "website": "Trang web",
     "contact": {
       "phone": "+84 348786464",
       "email": "nguyenduykhanh827@gmail.com",
       "location": "Hà Nội, Việt Nam",
       "github": "github.com/ndk-771998",
-      "linkedin": "linkedin.com/in/duykhanh"
+      "linkedin": "linkedin.com/in/duykhanh",
+      "vercel": "https://cv-fullstack-kappa.vercel.app/"
     },
     "languages": [
-      { "name": "Tiếng Việt", "level": "Tiếng mẹ đẻ" },
       { "name": "Tiếng Anh", "level": "Đọc hiểu tốt" }
     ],
     "experience": [
