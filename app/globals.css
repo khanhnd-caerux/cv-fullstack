@@ -60,15 +60,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.glass-hover:hover {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.dark .glass-hover:hover {
-  background: rgba(255, 255, 255, 0.08);
-}
-
 /* Gradient text utility */
 .text-gradient {
   background: linear-gradient(135deg, #4338ca 0%, #7c3aed 50%, #06b6d4 100%);
@@ -78,85 +69,117 @@ body {
 }
 
 /* ========================================
-   PRINT STYLES — PDF Export
+   PRINT STYLES — PDF Export Optimized
    ======================================== */
 @media print {
-  /* Force light mode colors */
-  html,
-  body {
+  @page {
+    size: A4;
+    margin: 0; /* Xử lý margin bằng padding để tránh lỗi background aside */
+  }
+
+  /* Force light mode & Background colors */
+  html, body {
     background: #ffffff !important;
-    color: #0f172a !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    color: #020617 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   /* Hide interactive elements */
-  nav,
-  .print\:hidden,
-  [data-print="hidden"] {
+  nav, button, footer, .print\:hidden, [data-print="hidden"], #btn-export-pdf {
     display: none !important;
   }
 
-  /* Ensure the CV card fills the page */
+  /* Reset Main container */
   main {
     padding: 0 !important;
     margin: 0 !important;
     max-width: 100% !important;
+    width: 100% !important;
   }
 
-  /* Remove outer card shadow/radius for print */
-  main > div {
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    border: none !important;
+  /* Cố định layout 2 cột như trên Desktop */
+  .grid {
+    display: grid !important;
+    grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
   }
 
-  /* Force glass utility to white in print */
-  .glass,
-  .dark .glass {
+  /* Aside - Sidebar */
+  aside {
+    grid-column: span 4 / span 4 !important;
+    background-color: #f1f5f9 !important; /* Màu slate-100 */
+    border-right: 1px solid #e2e8f0 !important;
+    min-height: 297mm; /* Full chiều cao trang A4 */
+    display: block !important;
+    padding: 40px 30px !important;
+  }
+
+  /* Main Content Area */
+  .lg\:col-span-8 {
+    grid-column: span 8 / span 8 !important;
     background: #ffffff !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
+    padding: 40px !important;
+    display: block !important;
+  }
+
+  /* Profile Image Fix */
+  .w-36.h-36 {
+    box-shadow: none !important;
+    background: #4338ca !important; /* Viền gradient thành màu đặc khi in */
+  }
+
+  /* Icon Containers in Sidebar */
+  .w-9.h-9.rounded-xl {
+    background-color: #e2e8f0 !important; /* Đậm hơn một chút để nổi bật trên nền slate-100 */
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  /* Force Colors */
+  .text-accent-indigo { color: #4338ca !important; }
+  .text-accent-cyan { color: #0891b2 !important; }
+  .bg-accent-indigo { background-color: #4338ca !important; }
+
+  /* Skills Tags */
+  span.px-5.py-2\.5 {
+    background-color: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    color: #020617 !important;
+    display: inline-block !important;
+    margin: 2px !important;
+  }
+
+  /* Progress Bars */
+  .h-1\.5.w-full.bg-slate-200 {
+    background-color: #e2e8f0 !important;
+  }
+  .h-full.bg-accent-indigo {
+    background-color: #4338ca !important;
+  }
+
+  /* Cards & Glass Effects */
+  .glass {
+    background: #ffffff !important;
     border: 1px solid #e2e8f0 !important;
     box-shadow: none !important;
+    backdrop-filter: none !important;
   }
 
-  /* Sidebar print styles — keep light bg */
-  aside {
-    background: #f1f5f9 !important;
-    border-right: 1px solid #e2e8f0 !important;
+  /* Page Break Control: Tránh việc ngắt giữa chừng một block nội dung */
+  section, .glass, .relative.pl-10 {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
   }
 
-  /* Main content area */
-  .lg\:col-span-8 {
-    background: #ffffff !important;
+  /* Flatten UI */
+  .rounded-\[2\.5rem\], .rounded-3xl, .rounded-\[2rem\] {
+    border-radius: 12px !important; /* Giảm bo góc quá lớn để chuyên nghiệp hơn trên giấy */
   }
 
-  /* Preserve accent indigo color for print */
-  .text-accent-indigo {
-    color: #4338ca !important;
-  }
-
-  /* Preserve skill tags */
-  span[class*="hover:bg-accent-indigo"] {
-    border-color: #e2e8f0 !important;
-    color: #0f172a !important;
-  }
-
-  /* Page break control */
-  section {
-    break-inside: avoid;
-  }
-
-  /* Remove animations */
+  /* Remove all animations & Opacity issues */
   * {
     animation: none !important;
     transition: none !important;
-  }
-
-  /* Page settings */
-  @page {
-    size: A4;
-    margin: 10mm 8mm;
+    opacity: 1 !important;
+    visibility: visible !important;
   }
 }
