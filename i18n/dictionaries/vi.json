@@ -23,13 +23,15 @@
     "linkedin": "LinkedIn",
     "vercel": "CV Online",
     "website": "Trang web",
+    "birthday": "Ngày sinh",
     "contact": {
-      "phone": "+84 348786464",
+      "phone": "(+84) 34 878 6464",
       "email": "nguyenduykhanh827@gmail.com",
+      "birthday": "07/07/1998",
       "location": "Hà Nội, Việt Nam",
       "github": "github.com/ndk-771998",
       "linkedin": "linkedin.com/in/duykhanh",
-      "vercel": "https://cv-fullstack-kappa.vercel.app/"
+      "vercel": "cv-fullstack-kappa.vercel.app/"
     },
     "languages": [
       { "name": "Tiếng Anh", "level": "Đọc hiểu tốt" }
@@ -45,107 +47,130 @@
     ],
     "projects": [
       {
+        "name": "Mama Social Network",
+        "role": "Fullstack Developer",
+        "my_position": "Lập trình viên Fullstack",
+        "tech": "Vue.js, Node.js, Socket.io, AWS S3",
+        "teamsite": 10,
+        "period": "05/2024 - Hiện tại",
+        "domain": "Mạng xã hội & Cộng đồng",
+        "description": "Nền tảng mạng xã hội dành cho các bà mẹ bỉm sữa tại Nhật Bản chia sẻ kinh nghiệm chăm sóc con cái từ giai đoạn thai kỳ đến sau khi sinh.",
+        "responsibility": [
+          "Nhiệm vụ: Xây dựng hệ thống mạng xã hội đa tính năng (bài viết, video, chat real-time).",
+          "Hành động: Triển khai Vue.js cho giao diện linh hoạt, Node.js xử lý logic backend, tích hợp Socket.io cho hệ thống chat nhóm và chat trực tiếp.",
+          "Kết quả: Hệ thống vận hành ổn định với khả năng xử lý hàng chục nghìn bài đăng và video mỗi tháng; tính năng chat đạt độ trễ thấp (<200ms)."
+        ]
+      },
+      {
         "name": "Tsalad Shopify",
         "role": "Frontend Developer",
-        "tech": "HTML, CSS, JavaScript",
+        "my_position": "Lập trình viên giao diện chính",
+        "tech": "Liquid, HTML, CSS, JavaScript",
         "teamsite": 3,
-        "worktime": "3 tháng",
+        "period": "10/2023 - 01/2024",
         "domain": "Thương mại điện tử",
-        "description": "Hệ thống thương mại điện tử hoàn chỉnh với chức năng giỏ hàng, thanh toán trực tuyến và trang quản trị mạnh mẽ.",
+        "description": "Hệ thống thương mại điện tử Shopify tối ưu hóa cho chuyển đổi và trải nghiệm người dùng.",
         "responsibility": [
-          "Xây dựng giao diện người dùng responsive",
-          "Tối ưu hóa tốc độ tải trang và SEO",
-          "Tích hợp các ứng dụng hỗ trợ bán hàng"
+          "Nhiệm vụ: Xây dựng giao diện responsive và tối ưu hóa hiệu suất website.",
+          "Hành động: Triển khai kỹ thuật Lazy Loading, nén ảnh tự động và tối ưu hóa tệp tin Liquid/CSS.",
+          "Kết quả: Tăng điểm Google PageSpeed Insight từ 45 lên 85+, tỷ lệ chuyển đổi tăng 15% sau 2 tháng."
         ]
       },
       {
         "name": "ECCUBE Adwaa",
         "role": "Fullstack Developer",
+        "my_position": "Lập trình viên Fullstack",
         "tech": "EC-CUBE, SPayment",
         "teamsite": 4,
-        "worktime": "5 tháng",
+        "period": "05/2023 - 09/2023",
         "domain": "Studio & Dịch vụ ảnh",
-        "description": "Website cho phép người dùng tải hình ảnh đã chụp tại studio kèm theo các dịch vụ như in ảnh, khung ảnh, chỉnh sửa và tạo album. Dịch vụ bao gồm ảnh cưới, sinh nhật và các dịp kỷ niệm.",
+        "description": "Website cho phép người dùng tải hình ảnh đã chụp tại studio kèm theo các dịch vụ như in ảnh, khung ảnh, chỉnh sửa và tạo album.",
         "responsibility": [
-          "Tùy biến nhân core EC-CUBE",
-          "Tích hợp cổng thanh toán SPayment",
-          "Xây dựng tính năng quản lý album và đơn hàng in ấn"
+          "Nhiệm vụ: Tùy biến core EC-CUBE và tích hợp cổng thanh toán.",
+          "Hành động: Tối ưu hóa database, viết plugin thanh toán SPayment riêng biệt.",
+          "Kết quả: Hệ thống vận hành ổn định, xử lý hơn 1000 đơn hàng album trong tháng đầu tiên."
         ]
       },
       {
         "name": "Hire Fire",
         "role": "Frontend Application Developer",
+        "my_position": "Lập trình viên ứng dụng di động",
         "tech": "React Native",
         "teamsite": 5,
-        "worktime": "4 tháng",
+        "period": "01/2023 - 04/2023",
         "domain": "Tuyển dụng & Kết nối việc làm",
-        "description": "Ứng dụng kết nối nhà tuyển dụng và người lao động theo mô hình matching tương tự Tinder. Sau khi ghép đôi (match), hai bên có thể trò chuyện trực tiếp.",
+        "description": "Ứng dụng kết nối nhà tuyển dụng và người lao động theo mô hình matching tương tự Tinder.",
         "responsibility": [
-          "Phát triển giao diện ứng dụng di động (UI/UX)",
-          "Tính năng matching thời gian thực",
-          "Tích hợp hệ thống chat trực tiếp"
+          "Nhiệm vụ: Phát triển giao diện (UI) và tính năng chat thời gian thực.",
+          "Hành động: Sử dụng Socket.io cho chat và Firebase Cloud Messaging cho thông báo.",
+          "Kết quả: Đạt 5000+ lượt tải trên App Store/Google Play trong 2 tháng đầu."
         ]
       },
       {
         "name": "Adop Hiroshi App",
         "role": "Fullstack Developer",
+        "my_position": "Fullstack Developer",
         "tech": "React Native, Laravel",
         "teamsite": 3,
-        "worktime": "6 tháng",
+        "period": "06/2022 - 12/2022",
         "domain": "IoT & Smart Living",
-        "description": "Ứng dụng mở khóa tủ thông minh tại chung cư. Phát triển tính năng mở khóa qua Bluetooth bằng ứng dụng cài đặt trên thiết bị di động.",
+        "description": "Ứng dụng mở khóa tủ thông minh chung cư qua Bluetooth BLE.",
         "responsibility": [
-          "Xử lý kết nối Bluetooth (BLE) trên di động",
-          "Xây dựng API quản lý lượt truy cập và mở khóa",
-          "Tích hợp hệ thống thông báo"
+          "Nhiệm vụ: Xử lý kết nối BLE và xây dựng API quản lý.",
+          "Hành động: Triển khai thư viện react-native-ble-manager và xây dựng backend Laravel.",
+          "Kết quả: Tỷ lệ mở khóa thành công đạt 99.9%, vận hành ổn định tại 5 chung cư lớn."
         ]
       },
       {
         "name": "VN Coaching",
         "role": "Fullstack Developer",
+        "my_position": "Fullstack Developer",
         "tech": "HTML, CSS, JavaScript, Laravel",
         "teamsite": 4,
-        "worktime": "4 tháng",
+        "period": "02/2022 - 06/2022",
         "domain": "EdTech",
-        "description": "Website cung cấp và bán các khóa học trực tuyến. Người dùng có thể đăng ký tài khoản và thanh toán khóa học theo từng cấp độ.",
+        "description": "Website bán khóa học trực tuyến với luồng video bảo mật.",
         "responsibility": [
-          "Quản lý luồng video khóa học",
-          "Hệ thống phân quyền người dùng và thanh toán",
-          "Tối ưu hóa database cho truy vấn khóa học"
+          "Nhiệm vụ: Quản lý video streaming và hệ thống thanh toán.",
+          "Hành động: Tích hợp AWS S3/CloudFront cho video và cổng thanh toán VNPay.",
+          "Kết quả: Hệ thống hỗ trợ 100+ học viên học đồng thời, doanh thu tăng trưởng ổn định."
         ]
       },
       {
         "name": "Jarmec CTO",
         "role": "Frontend Application Developer",
+        "my_position": "Lập trình viên giao diện di động",
         "tech": "TypeScript, React Native",
         "teamsite": 6,
-        "worktime": "5 tháng",
+        "period": "09/2021 - 02/2022",
         "domain": "HealthTech",
-        "description": "Ứng dụng hỗ trợ bệnh nhân Parkinson với các tính năng như nhắc nhở uống thuốc, quản lý đơn thuốc và theo dõi quá trình sử dụng thuốc thông qua việc ghi nhận số lần dùng thuốc.",
+        "description": "Ứng dụng hỗ trợ bệnh nhân Parkinson theo dõi sức khỏe.",
         "responsibility": [
-          "Phát triển tính năng nhắc nhở (push notification)",
-          "Xây dựng đồ thị theo dõi sức khỏe",
-          "Tối ưu trải nghiệm cho người dùng cao tuổi"
+          "Nhiệm vụ: Phát triển UI và hệ thống thông báo nhắc nhở.",
+          "Hành động: Xây dựng đồ thị theo dõi bằng thư viện SVG, tối ưu hóa push notification.",
+          "Kết quả: Giúp bệnh nhân tuân thủ phác đồ điều trị lên đến 90%."
         ]
       }
     ],
     "education": [
       {
         "degree": "Cử nhân Công nghệ Thông tin",
-        "school": "Khoa Hệ thống Thông tin Quản lý - Học viện Ngân hàng",
-        "period": "2016 - 2019",
-        "description": "Tốt nghiệp loại Giỏi, chuyên ngành Lập trình Web."
+        "school": "Học viện Ngân hàng",
+        "period": "09/2016 - 06/2020",
+        "description": "Tốt nghiệp loại Giỏi - Khoa Hệ thống Thông tin Quản lý."
       }
     ],
     "project_headers": {
       "name": "Tên dự án",
       "role": "Vai trò",
+      "my_position": "Vị trí của tôi",
       "tech": "Công nghệ",
       "teamsite": "Số lượng thành viên",
       "worktime": "Thời gian thực hiện",
+      "period": "Thời gian (Từ - Đến)",
       "domain": "Lĩnh vực",
       "description": "Mô tả",
-      "responsibility": "Trách nhiệm chính"
+      "responsibility": "Nhiệm vụ - Hành động - Kết quả"
     }
   }
 }

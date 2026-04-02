@@ -24,13 +24,15 @@
     "vercel": "CV Online",
     "website": "Website",
     "ver": "Website",
+    "birthday": "Date of Birth",
     "contact": {
-      "phone": "+84 348786464",
+      "phone": "(+84) 34 878 6464",
       "email": "nguyenduykhanh827@gmail.com",
+      "birthday": "July 7, 1998",
       "location": "Hanoi, Vietnam",
       "github": "github.com/ndk-771998",
       "linkedin": "linkedin.com/in/duykhanh",
-      "vercel": "https://cv-fullstack-kappa.vercel.app/"
+      "vercel": "cv-fullstack-kappa.vercel.app/"
     },
     "languages": [
       { "name": "English", "level": "Good reading and comprehension" }
@@ -46,107 +48,130 @@
     ],
     "projects": [
       {
+        "name": "Mama Social Network",
+        "role": "Fullstack Developer",
+        "my_position": "Fullstack Developer (FE & BE)",
+        "tech": "Vue.js, Node.js, Socket.io, AWS S3",
+        "teamsite": 10,
+        "period": "May 2024 - Present",
+        "domain": "Social Media & Community",
+        "description": "Social networking platform for Japanese mothers to share parenting experiences from pregnancy through postpartum.",
+        "responsibility": [
+          "Task: Build a multi-feature social system including posts, video sharing, and real-time communication.",
+          "Action: Developed reactive UI with Vue.js, Node.js for backend logic, and integrated Socket.io for group/direct chat functionality.",
+          "Result: Successful stable system with tens of thousands of monthly uploads; chat latency achieved <200ms."
+        ]
+      },
+      {
         "name": "Tsalad Shopify",
         "role": "Frontend Developer",
-        "tech": "HTML, CSS, JavaScript",
+        "my_position": "Lead Frontend Developer",
+        "tech": "Liquid, HTML, CSS, JavaScript",
         "teamsite": 3,
-        "worktime": "3 months",
+        "period": "Oct 2023 - Jan 2024",
         "domain": "E-commerce",
-        "description": "Complete e-commerce system with shopping cart, online payment, and a robust admin dashboard.",
+        "description": "Shopify e-commerce system optimized for conversions and user experience.",
         "responsibility": [
-          "Building responsive user interfaces",
-          "Optimizing page load speed and SEO",
-          "Integrating sales support applications"
+          "Task: Build responsive interfaces and optimize website performance.",
+          "Action: Implemented Lazy Loading, automatic image compression, and Liquid/CSS optimization.",
+          "Result: Increased Google PageSpeed Insight score from 45 to 85+, 15% conversion rate increase."
         ]
       },
       {
         "name": "ECCUBE Adwaa",
         "role": "Fullstack Developer",
+        "my_position": "Fullstack Developer",
         "tech": "EC-CUBE, SPayment",
         "teamsite": 4,
-        "worktime": "5 months",
+        "period": "May 2023 - Sep 2023",
         "domain": "Photo Studio & Services",
-        "description": "A website that allows users to download photos taken at the studio with services such as printing, framing, editing, and album creation. Services include wedding, birthday, and anniversary photos.",
+        "description": "A website allowing users to download studio photos with services like printing and album creation.",
         "responsibility": [
-          "Customizing EC-CUBE core",
-          "Integrating SPayment gateway",
-          "Developing album management and printing order features"
+          "Task: Customizing EC-CUBE core and integrating payment gateway.",
+          "Action: Optimized database queries, developed custom SPayment payment plugin.",
+          "Result: System handled 1000+ album orders in the first month without downtime."
         ]
       },
       {
         "name": "Hire Fire",
         "role": "Frontend Application Developer",
+        "my_position": "Mobile App Developer",
         "tech": "React Native",
         "teamsite": 5,
-        "worktime": "4 months",
+        "period": "Jan 2023 - Apr 2023",
         "domain": "Recruitment & Job Matching",
-        "description": "An application connecting employers and employees with a matching model similar to Tinder. After matching, both parties can chat directly.",
+        "description": "An application connecting employers and employees with a matching model similar to Tinder.",
         "responsibility": [
-          "Developing mobile app UI/UX",
-          "Real-time matching features",
-          "Integrating direct chat systems"
+          "Task: Build mobile app UI/UX and real-time chat functionality.",
+          "Action: Used Socket.io for chat and Firebase Cloud Messaging for notifications.",
+          "Result: Achieved 5000+ downloads within 2 months of launch."
         ]
       },
       {
         "name": "Adop Hiroshi App",
         "role": "Fullstack Developer",
+        "my_position": "Fullstack Developer",
         "tech": "React Native, Laravel",
         "teamsite": 3,
-        "worktime": "6 months",
+        "period": "Jun 2022 - Dec 2022",
         "domain": "IoT & Smart Living",
-        "description": "Smart locker unlocking application for apartments. Developed Bluetooth unlocking features via mobile devices.",
+        "description": "Smart locker unlocking application via Bluetooth BLE.",
         "responsibility": [
-          "Handling mobile Bluetooth (BLE) connections",
-          "Building access and unlock management APIs",
-          "Integrating notification systems"
+          "Task: Handle BLE connection and build backend API.",
+          "Action: Implemented react-native-ble-manager and developed Laravel backend.",
+          "Result: Achieved 99.9% successful unlock rate across 5 major residential complexes."
         ]
       },
       {
         "name": "VN Coaching",
         "role": "Fullstack Developer",
+        "my_position": "Fullstack Developer",
         "tech": "HTML, CSS, JavaScript, Laravel",
         "teamsite": 4,
-        "worktime": "4 months",
+        "period": "Feb 2022 - Jun 2022",
         "domain": "EdTech",
-        "description": "Website providing and selling online courses. Users can register accounts and pay for courses by level.",
+        "description": "Online course platform with secure video streaming and payment integration.",
         "responsibility": [
-          "Managing course video streaming",
-          "User permission and payment systems",
-          "Optimizing database for course queries"
+          "Task: Manage video streaming and secure payment workflows.",
+          "Action: Integrated AWS S3/CloudFront and VNPay payment gateway.",
+          "Result: Supported 100+ concurrent students, achieved stable revenue growth."
         ]
       },
       {
         "name": "Jarmec CTO",
         "role": "Frontend Application Developer",
+        "my_position": "Frontend UI Developer",
         "tech": "TypeScript, React Native",
         "teamsite": 6,
-        "worktime": "5 months",
+        "period": "Sep 2021 - Feb 2022",
         "domain": "HealthTech",
-        "description": "Application supporting Parkinson's patients with features like medication reminders, prescription management, and tracking medication usage history.",
+        "description": "Medical support application for Parkinson's patients.",
         "responsibility": [
-          "Developing push notification reminders",
-          "Building health tracking charts",
-          "Optimizing experience for elderly users"
+          "Task: Develop mobile UI and push notification system.",
+          "Action: Built health tracking charts using SVG, optimized notification delivery.",
+          "Result: Improved medication adherence rate by up to 90%."
         ]
       }
     ],
     "education": [
       {
         "degree": "Bachelor of Information Technology",
-        "school": "Department of Management Information Systems - Banking Academy",
-        "period": "2016 - 2019",
-        "description": "Graduated with Honors, specialized in Web Development."
+        "school": "Banking Academy",
+        "period": "Sep 2016 - Jun 2020",
+        "description": "Graduated with Honors - Department of Management Information Systems."
       }
     ],
     "project_headers": {
       "name": "Project Name",
-      "role": "Role",
+      "role": "Team Role",
+      "my_position": "Individual Position",
       "tech": "Technologies",
       "teamsite": "Team Size",
       "worktime": "Duration",
+      "period": "Period (From - To)",
       "domain": "Domain",
       "description": "Description",
-      "responsibility": "Key Responsibilities"
+      "responsibility": "Task - Action - Result"
     }
   }
 }

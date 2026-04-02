@@ -27,7 +27,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className={`${inter.variable} ${outfit.variable} scroll-smooth`} suppressHydrationWarning>
-      <body className="antialiased selection:bg-accent-indigo selection:text-white dark:bg-midnight-950 bg-slate-50 transition-colors duration-300">
+      <body suppressHydrationWarning className="antialiased selection:bg-accent-indigo selection:text-white dark:bg-midnight-950 bg-slate-50 transition-colors duration-300">
         <ThemeProvider>
           {children}
         </ThemeProvider>

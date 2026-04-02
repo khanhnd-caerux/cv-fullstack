@@ -14,6 +14,7 @@ import {
   Globe,
   FileDown,
   ExternalLink,
+  Calendar,
 } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -29,7 +30,7 @@ export default function CVTemplate({ locale, dict }: { locale: string; dict: any
   }, []);
 
   if (!mounted) {
-    return <div className="min-h-screen bg-slate-50 dark:bg-midnight-950 transition-colors duration-300" />;
+    return <div suppressHydrationWarning className="min-h-screen bg-slate-50 dark:bg-midnight-950 transition-colors duration-300" />;
   }
 
   const fadeIn = {
@@ -46,11 +47,11 @@ export default function CVTemplate({ locale, dict }: { locale: string; dict: any
       <div className="min-w-0 flex-1">
         <p className="text-[10px] uppercase tracking-widest text-[var(--text-muted)] font-bold mb-1 print:text-slate-500">{label}</p>
         {href ? (
-          <a href={href} className="text-sm font-bold text-[var(--foreground)] hover:text-accent-indigo dark:hover:text-accent-cyan transition-colors truncate block max-w-[180px] print:max-w-none">
+          <a href={href} className="text-sm font-bold text-[var(--foreground)] hover:text-accent-indigo dark:hover:text-accent-cyan transition-colors truncate block max-w-[180px] print:max-w-none print:whitespace-normal print:break-all print:text-accent-indigo">
             {value}
           </a>
         ) : (
-          <p className="text-sm font-bold text-[var(--foreground)] truncate print:whitespace-normal">{value}</p>
+          <p className="text-sm font-bold text-[var(--foreground)] truncate print:whitespace-normal print:overflow-visible print:break-all">{value}</p>
         )}
       </div>
     </div>
@@ -112,10 +113,24 @@ export default function CVTemplate({ locale, dict }: { locale: string; dict: any
                   </h2>
                   <SidebarItem icon={<Phone size={18} />} label={cv.phone} value={cv.contact.phone} />
                   <SidebarItem icon={<Mail size={18} />} label={cv.email} value={cv.contact.email} href={`mailto:${cv.contact.email}`} />
+                  <SidebarItem icon={<Calendar size={18} />} label={cv.birthday} value={cv.contact.birthday} />
                   <SidebarItem icon={<MapPin size={18} />} label={cv.location} value={cv.contact.location} />
                   <SidebarItem icon={<Github size={18} />} label={cv.github} value={cv.contact.github} href={`https://${cv.contact.github}`} />
                   <SidebarItem icon={<Linkedin size={18} />} label={cv.linkedin} value={cv.contact.linkedin} href={`https://${cv.contact.linkedin}`} />
-                  <SidebarItem icon={<Globe size={18} />} label={cv.vercel} value={cv.contact.vercel} href={`https://${cv.contact.vercel}`} />
+                  
+                  {/* Highlighted CV Online Link */}
+                  <div className="mt-8 p-6 rounded-3xl bg-accent-indigo/10 dark:bg-accent-indigo/20 border border-accent-indigo/20 print:bg-slate-100 print:mt-6 print:p-5">
+                    <SidebarItem 
+                      icon={<Globe size={18} className="animate-pulse" />} 
+                      label={cv.vercel} 
+                      value={cv.contact.vercel} 
+                      href={`https://${cv.contact.vercel}`} 
+                    />
+                    <div className="flex items-center gap-2 mt-[-12px] ml-13">
+                      <span className="flex h-2 w-2 rounded-full bg-green-500"></span>
+                      <span className="text-[10px] font-bold text-green-600 dark:text-green-400 uppercase tracking-tighter">Live Demo Available</span>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Languages */}
@@ -264,18 +279,22 @@ export default function CVTemplate({ locale, dict }: { locale: string; dict: any
                           {proj.description}
                         </p>
 
-                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 py-6 border-y border-black/5 dark:border-white/5 print:border-slate-200">
+                        <div className="grid grid-cols-2 sm:grid-cols-4 print:grid-cols-2 gap-x-6 gap-y-4 py-6 border-y border-black/5 dark:border-white/5 print:border-slate-200">
                           <div>
                             <p className="text-[10px] uppercase text-[var(--text-muted)] font-bold mb-1">{cv.project_headers.role}</p>
                             <p className="text-sm font-bold text-[var(--foreground)]">{proj.role}</p>
+                          </div>
+                          <div>
+                            <p className="text-[10px] uppercase text-[var(--text-muted)] font-bold mb-1">{cv.project_headers.my_position}</p>
+                            <p className="text-sm font-bold text-[var(--foreground)]">{proj.my_position}</p>
                           </div>
                           <div>
                             <p className="text-[10px] uppercase text-[var(--text-muted)] font-bold mb-1">{cv.project_headers.teamsite}</p>
                             <p className="text-sm font-bold text-[var(--foreground)]">{proj.teamsite}</p>
                           </div>
                           <div>
-                            <p className="text-[10px] uppercase text-[var(--text-muted)] font-bold mb-1">{cv.project_headers.worktime}</p>
-                            <p className="text-sm font-bold text-[var(--foreground)]">{proj.worktime}</p>
+                            <p className="text-[10px] uppercase text-[var(--text-muted)] font-bold mb-1">{cv.project_headers.period}</p>
+                            <p className="text-sm font-bold text-[var(--foreground)]">{proj.period}</p>
                           </div>
                         </div>
 
