@@ -15,7 +15,9 @@ import {
   FileDown,
   ExternalLink,
   Calendar,
+  User,
 } from "lucide-react";
+import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useState, useEffect } from "react";
@@ -71,6 +73,13 @@ export default function CVTemplate({ locale, dict }: { locale: string; dict: any
             <FileDown size={16} />
             {dict.nav.export_pdf}
           </button>
+          <Link
+            href={`/${locale}/profile`}
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white dark:bg-midnight-900 text-[var(--foreground)] text-sm font-bold shadow-lg border border-white/5 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+          >
+            <User size={16} className="text-accent-indigo" />
+            {dict.profile.title}
+          </Link>
           <LanguageSwitcher currentLocale={locale} />
           <ThemeToggle />
         </div>

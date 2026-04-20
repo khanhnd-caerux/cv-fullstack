@@ -35,7 +35,10 @@
       "vercel": "cv-fullstack-kappa.vercel.app/"
     },
     "languages": [
-      { "name": "English", "level": "Good reading and comprehension" }
+      {
+        "name": "English",
+        "level": "Good reading and comprehension"
+      }
     ],
     "experience": [
       {
@@ -172,6 +175,54 @@
       "domain": "Domain",
       "description": "Description",
       "responsibility": "Task - Action - Result"
+    }
+  },
+  "profile": {
+    "title": "Profile & Sharing",
+    "back_to_cv": "View my CV",
+    "hero": {
+      "greeting": "Hi, I am Duy Khanh!",
+      "bio": "A Fullstack Developer with a passion for building refined, efficient technology products that bring real value to users.",
+      "scroll_down": "Discover my story"
+    },
+    "hobbies": {
+      "title": "Who am I outside of work?",
+      "items": [
+        {
+          "id": "photography",
+          "title": "Photography",
+          "desc": "I love walking around and capturing the simple moments of life through my camera lens.",
+          "icon": "Camera"
+        },
+        {
+          "id": "sports",
+          "title": "Sports",
+          "desc": "Badminton and gym are how I recharge after intense coding hours.",
+          "icon": "Dumbbell"
+        },
+        {
+          "id": "reading",
+          "title": "Reading",
+          "desc": "Enjoy books on mindset, self-development, and history.",
+          "icon": "BookOpen"
+        },
+        {
+          "id": "travel",
+          "title": "Traveling",
+          "desc": "The journey to explore new lands brings me a lot of creative inspiration.",
+          "icon": "Map"
+        }
+      ]
+    },
+    "essay": {
+      "title": "Professional Mindset & Opinions",
+      "intro": "Coding - For me, it is more than just dry lines of code.",
+      "paragraphs": [
+        "Many people see programmers as people sitting in front of a black screen, surrounded by confusing characters. But for me, programming is an art of problem-solving. Every line of code written carries a mission, a purpose to make someone life easier.",
+        "In over 4 years in the industry, I have realized that the most important skill is not how many frameworks you know by heart, but Clean Code mindset and empathy for users. A powerful system that is hard to use is still far from perfection.",
+        "This profession requires extreme patience. It is those sleepless nights tracking down a tiny bug, or times when you have to tear down and rebuild an entire architecture to optimize just a few seconds of response time. But it is the feeling when the product runs smoothly and receives good feedback from users that is the biggest motivation for me to never stop.",
+        "The future of technology changes every day, and I am always ready to refresh myself, constantly learning to be not just a coder, but a true problem solver."
+      ]
     }
   }
 }
