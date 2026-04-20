@@ -34,7 +34,10 @@
       "vercel": "cv-fullstack-kappa.vercel.app/"
     },
     "languages": [
-      { "name": "Tiếng Anh", "level": "Đọc hiểu tốt" }
+      {
+        "name": "Tiếng Anh",
+        "level": "Đọc hiểu tốt"
+      }
     ],
     "experience": [
       {
@@ -171,6 +174,54 @@
       "domain": "Lĩnh vực",
       "description": "Mô tả",
       "responsibility": "Nhiệm vụ - Hành động - Kết quả"
+    }
+  },
+  "profile": {
+    "title": "Profile & Chia sẻ",
+    "back_to_cv": "Xem CV của tôi",
+    "hero": {
+      "greeting": "Chào bạn, mình là Duy Khánh!",
+      "bio": "Một Fullstack Developer với tình yêu dành cho việc xây dựng những sản phẩm công nghệ tinh tế, hiệu quả và có giá trị thực tế cho người dùng.",
+      "scroll_down": "Khám phá câu chuyện của mình"
+    },
+    "hobbies": {
+      "title": "Ngoài công việc, mình là ai?",
+      "items": [
+        {
+          "id": "photography",
+          "title": "Chụp ảnh",
+          "desc": "Mình thích đi dạo và ghi lại những khoảnh khắc bình dị của cuộc sống qua ống kính máy ảnh.",
+          "icon": "Camera"
+        },
+        {
+          "id": "sports",
+          "title": "Thể thao",
+          "desc": "Cầu lông và gym là cách mình tái tạo năng lượng sau những giờ code căng thẳng.",
+          "icon": "Dumbbell"
+        },
+        {
+          "id": "reading",
+          "title": "Đọc sách",
+          "desc": "Yêu thích các đầu sách về tư duy, phát triển bản thân và lịch sử.",
+          "icon": "BookOpen"
+        },
+        {
+          "id": "travel",
+          "title": "Du lịch",
+          "desc": "Hành trình khám phá những vùng đất mới mang lại cho mình nhiều cảm hứng sáng tạo.",
+          "icon": "Map"
+        }
+      ]
+    },
+    "essay": {
+      "title": "Tư duy & Góc nhìn nghề nghiệp",
+      "intro": "Lập trình - Đối với mình, không chỉ là những dòng code khô khan.",
+      "paragraphs": [
+        "Nhiều người coi lập trình viên là những người ngồi trước màn hình đen và vây quanh bởi những ký tự khó hiểu. Nhưng với mình, lập trình là một nghệ thuật giải quyết vấn đề. Mỗi dòng code viết ra đều mang trong mình một nhiệm vụ, một mục đích là làm cho cuộc sống của ai đó trở nên dễ dàng hơn.",
+        "Trong suốt hơn 4 năm làm nghề, mình nhận ra rằng kỹ năng quan trọng nhất không phải là thuộc lòng bao nhiêu framework, mà là tư duy \"Clean Code\" và sự thấu cảm với người dùng. Một hệ thống mạnh mẽ nhưng khó sử dụng thì vẫn chưa đạt tới sự hoàn mỹ.",
+        "Nghề này đòi hỏi sự kiên nhẫn cực độ. Đó là những đêm thức trắng để truy tìm một lỗi nhỏ, hay những lúc phải đập đi xây lại cả một kiến trúc để tối ưu chỉ một vài giây phản hồi. Nhưng chính cảm giác khi sản phẩm vận hành mượt mà và nhận được phản hồi tốt từ người dùng là động lực lớn nhất để mình không bao giờ dừng lại.",
+        "Tương lai của công nghệ thay đổi mỗi ngày, và mình luôn sẵn sàng để làm mới bản thân, không ngừng học hỏi để không chỉ là một \"coder\", mà là một \"problem solver\" thực thụ."
+      ]
     }
   }
 }
